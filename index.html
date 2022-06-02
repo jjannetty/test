@@ -17,15 +17,23 @@
 			display: block;
 			width:  100%;
 		}
+
+		.wrap {
+			touch-action:  manipulation;
+		}
 	</style>
 </head>
 <body>
-	<button>button</button>
-	<input></input>
-	<svg width="48px" viewBox="0 0 26 24">
-    <path d="M2.75736 3.42411C0.414213 5.76725 0.414213 9.56624 2.75736 11.9094L13.0001 22.1521L23.2426 11.9094C25.5858 9.56624 25.5858 5.76725 23.2426 3.42411C20.8995 1.08096 17.1005 1.08096 14.7574 3.42411L13.0001 5.18154L11.2426 3.42411C8.8995 1.08096 5.10051 1.08096 2.75736 3.42411Z" />
-  </svg>
+	<div class="wrap">
+		<button>button</button>
+		<input></input>
+		<svg onclick="function({console.log('poop')})" id="tap" width="48px" viewBox="0 0 26 24">
+	    <path d="M2.75736 3.42411C0.414213 5.76725 0.414213 9.56624 2.75736 11.9094L13.0001 22.1521L23.2426 11.9094C25.5858 9.56624 25.5858 5.76725 23.2426 3.42411C20.8995 1.08096 17.1005 1.08096 14.7574 3.42411L13.0001 5.18154L11.2426 3.42411C8.8995 1.08096 5.10051 1.08096 2.75736 3.42411Z" />
+	  </svg>
 
-  <img src="https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600">
+	  <p id="count">0</p>
+
+	  <img src="https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600">
+	</div>
 </body>
 </html>
